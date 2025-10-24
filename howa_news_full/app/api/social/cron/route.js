@@ -1,4 +1,4 @@
-import { runSocialCron } from '@/lib/social/socialManager'
+import { postToSocial } from '../../../../lib/social/socialManager'
 export async function POST(req){
   const auth = req.headers.get('authorization') || ''
   const secret = (auth.replace('Bearer ', '')).trim()

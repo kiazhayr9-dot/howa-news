@@ -1,5 +1,5 @@
 import Parser from 'rss-parser'
-import { supabase } from '@/lib/supabaseClient'
+import { supabase } from '../../lib/supabaseClient'
 const parser = new Parser()
 export async function POST(req){
   const auth = req.headers.get('authorization') || ''
